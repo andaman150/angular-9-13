@@ -7,8 +7,8 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  @Input('media_query') mobileQueryMax = true;
-  @Output('toggle') navToggle = new EventEmitter();
+  @Input('media_query') mobileQuery = false;
+  @Output('toggleSidenav') navToggle = new EventEmitter();
   @Output() sayHi = new EventEmitter<String>();
 
   demoMailNoti = 10;
